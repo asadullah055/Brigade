@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+	font-family: 'Oswald', sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+*{box-sizing: border-box}
+
+ul.navigation{
+	margin: 0;
+	padding: 0;
+
+}
+ul.navigation li {
+	list-style: none;
+	float: left;
+	padding: 31px 0;
+	margin-right: 30px;
+	position: relative;
+}
+ul.navigation li a {
+	display: inline-block;
+	font-size: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 500;
+	color: #222;
+	transition: .5s ease;
+}
+ul.navigation li a i{
+	font-size: 20px;
+}
+ul.navigation > li > a:hover {
+	color: #ff5200;
+}
+.dropdown > a:after{
+	content: '\f107';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: bold;
+	margin-left: 5px;
+	font-size: 20px;
+	display: inline-block;
+	vertical-align: middle;
+
+}
+ul.navigation li ul li{
+	float: none;
+	width: 100%;
+	padding: 4px 28px;
+}
+.dropdown ul{
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 270px;
+	padding: 20px 0px;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: .5s;
+	border: 1px solid #e2e8f0;
+
+}
+.dropdown:hover ul{
+	transform: scaleY(1);
+	background: #ffffff;
+}
+.dropdown ul li a{
+	transition: .5s ease;
+	text-transform: capitalize;
+}
+.dropdown ul li a:before{
+	content: '';
+	height: 2px;
+	width: 0px;
+	background: #ff5200;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	transition: all .6s ease;
+	
+}
+.dropdown ul li:hover a:before{
+	width: 15px;
+
+}
